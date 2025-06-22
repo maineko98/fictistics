@@ -1,0 +1,89 @@
+Jak zalogowany to zrobić że jest to FF, a jak nie to zrobić nazwę "Jakiś projekt".
+Jeśli niezalogowany to wszystkie zdjęcia to jakieś randomowe, a nazwy to lorem ipsum. NIE MA OPCJI REJESTRACJI
+
+
+1. Logowanie (NIE MA REJESTRACJI, TYLKO DLA MNIE)
+Inaczej nie przechodzimy dalej
+
+2. Strona główna:
+    - Formularz dodawania ff
+        - Tytuł
+        - Autor
+        - Data
+        - Fandom
+        - Ship
+        - Gwiazdki
+        - Co tam było
+        - Opis od autora
+        - Zdjęcie okładki
+        - język
+        - platforma
+
+3. Przeglądanie
+Wszystko
+Fandom
+Osoba
+Zakończone
+Czytane
+Language
+
+4. Statystyki
+Data
+Fandom
+Ship
+Osoba
+Zakończone
+Czytane
+Language
+Platform
+
+Baza Danych:
+  fanfic:
+        - ID
+        - Tytuł
+        - Autor
+        - Data
+        - fandom_id
+        - ship_id
+        - gwiazdki
+        - opis_mój
+        - opis_autora
+        - zdjęcie
+        - language
+
+✅  fandom: 
+        - ID
+        - name
+
+✅  ship:
+        - ID
+        - name
+        - person_id (1)
+        - person_id (2)
+        - fandom_id
+        
+
+✅  osoby:
+        - ID
+        - name
+        - fandom_id
+
+✅  language:
+        - pl
+        - eng
+
+✅  platform:
+        - wattpad
+        - ao3
+        - blog
+        - inne
+        
+     notatki
+        - ID
+        - tresc
+
+✅  status:
+        - id
+        - status
+
+SQL INJECTION!!!
